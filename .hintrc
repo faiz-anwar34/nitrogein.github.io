@@ -7,6 +7,7 @@
       "default",
       {
         "ignore": [
+          "user-select",
           "user-select"
         ]
       }
