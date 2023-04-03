@@ -6,7 +6,9 @@
    
     </head>
     <body>
-     <img class="logo" src="imagee/OFFICIL_LOGO-removebg-preview.png" alt="">
+      <video class="logo" autoplay>
+        <source src="“Welcome to our educational website. We appreciate your visit and hope you find our content useful in your learning journey.”.mp4" type="video/mp4">
+      </video>
     <div id="form-container" >
       <h1> <span> Suggestion-Form</span></h1><br>
       <form
@@ -15,16 +17,23 @@
       id="suggestion-form"
     >
       <label  for="name">Name:</label><br>
-      <input  type="text" id="name" required name="name"><br>
+      <input  type="text" id="name" required name="name" placeholder="Enter Your Name"><br>
 
       <label  for="email">Email:</label><br>
-      <input  type="email"id="email" required name="email"><br>
+      <input  type="email"id="email" required name="email" placeholder="Enter Your Email"><br>
 
       <label  for="suggestion">Suggestion:</label><br>
-      <textarea id="suggestion" required name="suggestion"></textarea><br>
+      <textarea id="suggestion" required name="suggestion" placeholder="Your suggestion here or interest topic for contant"></textarea><br>
 
       <input  type="submit" value="Submit">
     </form>
+    <p id="thankyou">Thank you for submitting your data!</p>
+    <script>
+      function showThankYou(event) {
+        event.preventDefault();
+        document.getElementById('thankyou').style.display = 'block';
+      }
+      </script>
   </div>
   <div id="security-promise">
     <p>Your data is safe with us. We promise to never share or sell your information.
@@ -113,6 +122,6 @@ user-select: none;
   margin-top: 20px;
   user-select: none;
 }  </style>
-
+<script src="form.js"></script>
 </body>
 </html>
