@@ -96,7 +96,11 @@ nav li {
   padding: 0px;
   text-align: center;
   overflow: hidden;
-}
+}    blockquote {
+   font-size: 1.5em;
+   color: #333;
+   font-style: italic;
+ }
 
  @media screen and ( max-width:600px ){
    background-image{
@@ -109,7 +113,6 @@ nav li {
          margin-top: 0%;
       
       }
-      
    }
  
 @media screen and ( max-width:600px ){
@@ -131,10 +134,8 @@ nav li {
    }
 }
 @media screen and (max-width:600px){
-   header img {
-      display: block;
-      position: absolute;
-      margin: 13%;
+   body{
+      overflow: hidden;
    }
 }
 @media screen and (max-width:600px){
