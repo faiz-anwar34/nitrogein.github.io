@@ -100,7 +100,113 @@ nav li {
    font-size: 1.5em;
    color: #333;
    font-style: italic;
+ }  footer {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: #333;
+   color: #fff;
  }
+ 
+ footer address,
+ footer ul {
+   margin: 0;
+ }
+ 
+ footer a {
+   color: #fff;
+ }  footer {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: #333;
+   color: #fff;
+ }
+ 
+ footer address,
+ footer ul {
+   margin: 0;
+ }
+ 
+ footer a {
+   color: #fff;
+ }  footer {
+              display: flex;
+              justify-content: space-between;
+              padding: 20px;
+              background-color: #333;
+              color: #fff;
+            }
+            
+            footer address,
+            footer ul {
+              margin: 0;
+            }
+            
+            footer a {
+              color: #fff;
+            }  footer {
+              display: flex;
+              justify-content: space-between;
+              padding: 20px;
+              background-color: #333;
+              color: #fff;
+            }
+            
+            footer address,
+            footer ul {
+              margin: 0;
+            }
+            
+            footer a {
+              color: #fff;
+            }  footer {
+              display: flex;
+              justify-content: space-between;
+              padding: 20px;
+              background-color: #333;
+              color: #fff;
+            }
+            
+            footer address,
+            footer ul {
+              margin: 0;
+            }
+            
+            footer a {
+              color: #fff;
+            }  footer {
+              display: flex;
+              justify-content: space-between;
+              padding: 20px;
+              background-color: #333;
+              color: #fff;
+            }
+            
+            footer address,
+            footer ul {
+              margin: 0;
+            }
+            
+            footer a {
+              color: #fff;
+            }
+            footer {
+               display: flex;
+               justify-content: space-between;
+               padding: 20px;
+               background-color: #333;
+               color: #fff;
+             }
+             
+             footer address,
+             footer ul {
+               margin: 0;
+             }
+             
+             footer a {
+               color: #fff;
+             }
 
  @media screen and ( max-width:600px ){
    background-image{
