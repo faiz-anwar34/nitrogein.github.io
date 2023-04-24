@@ -17,34 +17,37 @@
         <source src="../imagee/GIF/“Welcome to our educational website. We appreciate your visit and hope you find our content useful in your learning journey.”.mp4" type="video/mp4">
       </video>
     <div id="form-container" >
-      <h1> <span> Suggestion-Form</span></h1><br>
-      <form
-      action="this is not working wright now"
-      method="POST"
-      id="suggestion-form"
-    >
-      <label  for="name">Name:</label><br>
-      <input  type="text" id="name" required name="name" placeholder="Enter Your Name"><br>
-
-      <label  for="email">Email:</label><br>
-      <input  type="email"id="email" required name="email" placeholder="Enter Your Email"><br>
-
-      <label  for="suggestion">Suggestion:</label><br>
-      <textarea id="suggestion" required name="suggestion" placeholder="Your suggestion here or interest topic for contant"></textarea><br>
-
-      <input  type="submit" value="Submit">
-    </form>
-    <p id="thankyou">Thank you for submitting your data!</p>
+      <h1><span>Suggestion-Form</span></h1><br>
+      <form id="suggestion-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required name="name" placeholder="Enter Your Name"><br>
+      
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required name="email" placeholder="Enter Your Email"><br>
+      
+        <label for="suggestion">Suggestion:</label><br>
+        <textarea id="suggestion" required name="suggestion" placeholder="Your suggestion here or interest topic for content"></textarea><br>
+      
+        <input type="submit" value="Submit">
+      </form>
+      <p id="thankyou">Thank you for submitting your data!</p>
     <script>
-      function showThankYou(event) {
-        event.preventDefault();
-        document.getElementById('thankyou').style.display = 'block';
-      }
+const form = document.querySelector('#suggestion-form');
+let suggestions = JSON.parse(localStorage.getItem('suggestions')) || [];
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const name = document.querySelector('#name').value;
+  const email = document.querySelector('#email').value;
+  const suggestion = document.querySelector('#suggestion').value;
+  suggestions.push({ name, email, suggestion });
+  localStorage.setItem('suggestions', JSON.stringify(suggestions));
+  showThankYou(event);
+});
       </script>
   </div>
   <div id="security-promise">
     <p>Your data is safe with us. We promise to never share or sell your information.
-      Trusted by Fromspree.
+      Trusted by .
     </p>
   </div>
   <style>
