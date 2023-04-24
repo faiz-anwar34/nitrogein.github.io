@@ -156,6 +156,7 @@ nav li {
         width: 80%;
         height: 60%;
       }
+   }
  
 @media screen and ( max-width:600px ){
    nav a {
@@ -171,6 +172,9 @@ nav li {
    }
 }
 @media screen and (max-width:600px){
+   body{
+      overflow-x: hidden;
+   }
 }
 @media screen and (max-width:600px){
 
